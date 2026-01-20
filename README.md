@@ -123,7 +123,9 @@ Continue with **M3** brass inserts in holes as shown in the pictures.
 <img src="Images/Manual/PCB-Holder-M3.JPG" width="30%" align="center">
 </p>
 
-Assuming that you already put the inserts in, you can now test-fit components.
+**Mount passive radiators after brass inserts.**
+
+Assuming that you already put the inserts in, you can now test-fit electric components.
 
 <p align="center">
 <img src="Images/Manual/Layout.JPG" width="60%" align="center">
@@ -132,16 +134,67 @@ Assuming that you already put the inserts in, you can now test-fit components.
 Then continue with soldering cables as shown in the diagram. 
 **Depending on your BMS model, negative power output can be P- or C-. RTFM**
 
+## You MUST NOT play anything untill dsp is set or you will DAMAGE tweeter! ##
+
+You can plug two subwoofers at begging to prevent damage.
+
+**Watch out for speaker polarity!**
 <p align="center">
 <img src="Images/Manual/Diagram.JPG" width="60%" align="center">
 </p>
 
-
 ## DSP Tuning
 
-For DSP tuning you need proprietary software called ACPWorkbench; ask the seller of the amplifier for it.
+For DSP tuning you need proprietary software called ACPWorkbench, ask the seller of the amplifier for it.
 
-I would advise you to run it in a virtual machine environment.
+**I would advise you to run it in a virtual machine environment.**
+
+First of all, your amplifier needs power input to be detected by PC, you need to power it on, wait until it starts blinking fast, then connect to pc.
+If your computer detected it, it should be called mvsillicon-something under sound cards.
+
+First, you need to set correct output mode of DAC0, to 1.1 or mono depending on ACP version.
+<p align="center">
+<img src="Images/Manual/ACP_1-1.JPG" width="60%" align="center">
+</p>
+
+Further, you need to adjust Bluetooth gain to +2dB:
+<p align="center">
+<img src="Images/Manual/ACP_BT_Gain.JPG" width="60%" align="center">
+</p>
+
+Left channel is set for subwoofer, I did cut frequencies below 48Hz with high pass filter, as the speaker is not efficient or able to create powerfull wave lower than this 48Hz. 
+
+Following two PEAQ filter at 60Hz (+12) and 90Hz(+5) to produce more bass, and the end low pass filter at 2kHz.
+
+<p align="center">
+<img src="Images/Manual/ACP_Left.JPG" width="60%" align="center">
+</p>
+
+Right Channel is set for tweeter with simple high pass filter at 2.2kHz, and a slight bump at 16kHz. Frequencies don't overlap on purpose, as there is no hard cut-off.
+<p align="center">
+<img src="Images/Manual/ACP_Right.JPG" width="60%" align="center">
+</p>
+
+Assuming you have entered all config data you need to save it to flash:
+<p align="center">
+<img src="Images/Manual/ACP_Save.JPG" width="80%" align="center">
+<img src="Images/Manual/ACP_Save-2.JPG" width="80%" align="center">
+</p>
+
+## **After flashing amplifier will reboot, you need to enter again all configuration data and write it, three (3) times!**
+This amp has 3 slots of memory, so you need to make sure that no matter which config will be run, you will have proper crossover set.
+I strongly advise you to connect first two subwoofer's to prevent tweeter damage.
+
+After 3 flashes of amplifier, you need to:
+* Unplug amplifier from PC;
+* Power it off;
+* Connect ribbon cable with buttons;
+* Power on;
+* Hold stop button to change input source to bluetooth (hold it untill onboard led flashes quickly)
+* Pair with your device;
+* Power off;
+* Finish assembly;
+* Enjoy ;)
 
 ## Links
 
