@@ -1,8 +1,10 @@
 # Henryka The Speaker
 
-Welcome to the project of an open 3D-printable portable Bluetooth speaker. Hope you will have fun building your own.
-
+Welcome to the project of an open 3D-printable portable Bluetooth speaker. Hope you will have fun building your own. 
 Soon your favourite Bluetooth speaker.
+<p align="center">
+<img src="Images/Henryka.jpg" width="60%" align="center">
+</p>
 
 ## Tools List
 
@@ -103,13 +105,37 @@ That said, I still do recommend printing at least the back-side gasket.
 
 **Disclaimer:** I am not responsible for any fire hazard that may occur due to wrong handling of Li-ion batteries.
 
-Start with the soldering iron and placing brass inserts in holes as shown in the pictures.
+Start with the soldering iron and placing **M2** brass inserts in holes as shown in the pictures.
 
-Be careful: passive radiators do not require any inserts; the frame has threads.
+<p align="center">
+<img src="Images/Manual/Mainshell-M2.JPG" width="30%" align="center">
+<img src="Images/Manual/PCB-Holder-M2.JPG" width="30%" align="center">
+<img src="Images/Manual/Back-M2.JPG" width="30%" align="center">
+</p>
+
+**Be careful: passive radiators do not require any inserts; the frame has threads.**
+
+Continue with **M3** brass inserts in holes as shown in the pictures.
+
+<p align="center">
+<img src="Images/Manual/Mainshell-M3_1.JPG" width="30%" align="center">
+<img src="Images/Manual/Mainshell-M3_2.JPG" width="30%" align="center">
+<img src="Images/Manual/PCB-Holder-M3.JPG" width="30%" align="center">
+</p>
 
 Assuming that you already put the inserts in, you can now test-fit components.
 
-Then continue with soldering cables as shown in the diagram.
+<p align="center">
+<img src="Images/Manual/Layout.JPG" width="60%" align="center">
+</p>
+
+Then continue with soldering cables as shown in the diagram. 
+**Depending on your BMS model, negative power output can be P- or C-. RTFM**
+
+<p align="center">
+<img src="Images/Manual/Diagram.JPG" width="60%" align="center">
+</p>
+
 
 ## DSP Tuning
 
