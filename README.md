@@ -126,6 +126,11 @@ Continue with **M3** brass inserts in holes as shown in the pictures.
 **Mount passive radiators after brass inserts.**
 
 Assuming that you already put the inserts in, you can now test-fit electric components.
+USB-C board is mounted via 3 x M2 screw on top of mounting board.
+BMS board is mounted via 2 x M3 screws at bottom of board.
+Amplifier is designed to be mounted on top of board using double-sided tape and zip-ties as it does not have any mounting holes. As long as it holds up in place, you're ok.
+I would suggest mounting it last, and ziptiing to whole mounting board.
+I might redesign mounts for it in future as I do not like it.
 
 <p align="center">
 <img src="Images/Manual/Layout.JPG" width="60%" align="center">
