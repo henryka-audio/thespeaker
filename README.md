@@ -147,8 +147,6 @@ I would advise you to run it in a virtual machine environment.
 
 **If links are not valid, pictures of needed stuff are in images/parts**
 
-https://aliexpress.com/item/1005009824854792.html
-
 https://aliexpress.com/item/1005008713984644.html
 
 https://aliexpress.com/item/1005007055662250.html
@@ -166,3 +164,5 @@ https://aliexpress.com/item/1005008314123679.html
 https://aliexpress.com/item/1005003582355741.html
 
 https://aliexpress.com/item/1005007854404265.html
+
+https://aliexpress.com/item/1005009111898944.html
